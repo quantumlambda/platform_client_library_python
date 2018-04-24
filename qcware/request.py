@@ -4,7 +4,6 @@ import pickle
 import requests
 import param_utils
 
-
 def pickle_json(json_object):
     if isinstance(json_object, dict):
         r = {}
