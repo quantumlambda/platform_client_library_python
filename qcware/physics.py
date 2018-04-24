@@ -20,15 +20,15 @@ def mat_to_dict(mat):
 # VQE call                                                                                                                                
 def find_ground_state_energy(key,
               molecule,
-              basis = 'sto-3g'
+              basis = 'sto-3g',
               solver =  "simulator",
               multiplicity =  1,
               charge =  0,
               sampling =  False,
               sampling_trials =  1000,
               guess_amplitudes =  None,
-              initial_state =  'UCCSD'
-              minimizer =  'CG'
+              initial_state =  'UCCSD',
+              minimizer =  'CG',
 
               host="https://platform.qcware.com",
               ):
@@ -43,7 +43,7 @@ def find_ground_state_energy(key,
         "sampling": sampling,
         "sampling_trials": sampling_trials,
         'guess_amplitudes': guess_amplitudes,
-        'initial_state': initial_state
+        'initial_state': initial_state,
         'minimizer': minimizer
         }
 
